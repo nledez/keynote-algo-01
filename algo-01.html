@@ -395,6 +395,107 @@ void loop() {
 </div>
 </section>
 
+<section class="slide" id="_paradigmes">
+<h2>Paradigmes</h2>
+
+</section>
+
+<section class="slide" id="_proc_dural">
+<h2>Procédural</h2>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay"><code class="ruby language-ruby">def f1(x, y) do
+    return x * y
+end
+
+def f2(x, y) do
+    return x + y
+end
+
+f1(1, 2)
+f2(3, 4)</code></pre>
+</div>
+</div>
+</section>
+
+<section class="slide" id="_objet">
+<h2>Objet</h2>
+<div class="listingblock">
+<div class="content">
+<pre><code>class MesNombres
+    def initialize(x, y)
+        @x = x
+        @y = y
+    end
+
+    def f1 do
+        return @x * @y
+    end
+
+    def f2 do
+        return @x + @y
+    end
+end
+
+n = MesNombres.new(1, 2)
+n.f1
+n.f2</code></pre>
+</div>
+</div>
+</section>
+
+<section class="slide" id="_port_e_des_variables">
+<h2>Portée des variables</h2>
+
+</section>
+
+<section class="slide" id="_port_e_globale">
+<h2>Portée - Globale</h2>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay"><code class="c language-c">i = 0;
+
+void loop() {
+  while(i &lt;= 13){
+    digitalWrite(i, LOW);
+    i++;
+  }
+}</code></pre>
+</div>
+</div>
+</section>
+
+<section class="slide" id="_port_e_locale">
+<h2>Portée - Locale</h2>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay"><code class="c language-c">void loop() {
+  i = 0;
+  while(i &lt;= 13){
+    digitalWrite(i, LOW);
+    i++;
+  }
+}</code></pre>
+</div>
+</div>
+</section>
+
+<section class="slide" id="_compilation">
+<h2>Compilation ?</h2>
+<div class="ulist">
+<ul>
+<li>Compilé</li>
+<li>Interprété</li>
+<li>Bytecode</li>
+</ul>
+</div>
+</section>
+
+<section class="slide" id="_merci">
+<h2>Merci</h2>
+<div class="paragraph"><p>@nledez</p></div>
+</section>
+
 <p class="deck-status">
 <span class="deck-status-current"></span>
 /

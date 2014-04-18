@@ -246,3 +246,85 @@ image::images/algo-microcontroleur.png[title="Microcontroleur"]
 
 image::images/algo-os.png[title="OS"]
 
+== Paradigmes
+
+== Procédural
+
+[source,ruby]
+[subs="verbatim,macros"]
+----
+def f1(x, y) do
+    return x * y
+end
+
+def f2(x, y) do
+    return x + y
+end
+
+f1(1, 2)
+f2(3, 4)
+----
+
+== Objet
+
+----
+class MesNombres
+    def initialize(x, y)
+        @x = x
+        @y = y
+    end
+
+    def f1 do
+        return @x * @y
+    end
+
+    def f2 do
+        return @x + @y
+    end
+end
+
+n = MesNombres.new(1, 2)
+n.f1
+n.f2
+----
+
+== Portée des variables
+
+== Portée - Globale
+
+[source,c]
+[subs="verbatim,macros"]
+----
+i = 0;
+
+void loop() {
+  while(i <= 13){
+    digitalWrite(i, LOW);
+    i++;
+  }
+}
+----
+
+== Portée - Locale
+
+[source,c]
+[subs="verbatim,macros"]
+----
+void loop() {
+  i = 0;
+  while(i <= 13){
+    digitalWrite(i, LOW);
+    i++;
+  }
+}
+----
+
+== Compilation ?
+
+* Compilé
+* Interprété
+* Bytecode
+
+== Merci
+
+@nledez
