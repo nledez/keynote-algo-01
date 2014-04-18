@@ -325,6 +325,15 @@ void loop() {
 * Interprété
 * Bytecode
 
+== Avec quoi ?
+
+* Arduino
+* Assembleur
+* C / C++
+* Ruby/Python/Javascript/PHP
+* Java
+* Erlang/Haskell
+
 == Merci
 
 @nledez
